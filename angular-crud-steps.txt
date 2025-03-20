@@ -1,5 +1,8 @@
+set NODE_OPTIONS=--openssl-legacy-provider
+==============================================================
+
 Step 1 
-nmp install @angular/cli -g
+npm install @angular/cli -g
 
 Step 2 create new project
 
@@ -30,7 +33,7 @@ step 7 configure json server
 
 npm install -g json-server
 
-step 8 create and update db.json file inside the server folder
+step 8 create and update db.json file inside the project-root/server folder
 
 {
   "employees": [
@@ -61,8 +64,10 @@ step 8 create and update db.json file inside the server folder
   ]
 }
 
+npm i json-server ts-node --save-dev (mandatory for json server)
+
 step 9 start json server
-json-server --watch db.json
+json-server --watch server/db.json
 
 npm run server  //localhost:3000
 
@@ -83,3 +88,7 @@ like this all the modules
 step 14 update package.json file
 
 "server": "ts-node ./server/server.ts"
+
+select * from employee where id = 1; listing the data
+
+delete from employee where id = 1;
