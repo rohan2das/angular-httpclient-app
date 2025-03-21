@@ -10,15 +10,43 @@
   font-size: 14px;
 }
 
+
 .edit {
-  margin-right: 10px;
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 5px 10px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.edit,
+.edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 .delete {
-  cursor: pointer;
-  display: inline-block;
-  color: blue
+  background-color: #f44336; /* Red background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 5px 10px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.delete:hover {
+  background-color: #d32f2f; /* Darker red on hover */
 }
 
 .no-data {
